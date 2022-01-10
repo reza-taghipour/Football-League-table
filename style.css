@@ -47,6 +47,8 @@ a {
   transition: all 100ms ease-in;
 }
 
+
+
 .add-btm:hover,
 .add-btm:active {
   background-color: #0d47a1;
@@ -63,4 +65,9 @@ a {
 
 tbody {
     direction: rtl;
+}
+
+#arrayContainer {
+  display: flex;
+  flex-direction: column;
 }
