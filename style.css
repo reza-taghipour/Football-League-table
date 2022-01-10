@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  direction: rtl;
+  text-align: center;
+  margin: 1rem;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+  margin: 1rem 10px;
+  border: 1px solid red;
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+.add-new-league {
+  display: none;
+  flex-direction: column;
+}
+
+.add-btm {
+  width: 6em;
+  height: 2em;
+  font-size: 1.5em;
+  margin: 1rem;
+  border: none;
+  background-color: #2962ff;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 0.2em;
+  outline: none;
+  transition: all 100ms ease-in;
+}
+
+.add-btm:hover,
+.add-btm:active {
+  background-color: #0d47a1;
+}
+
+.matches-container {
+  display: flex;
+  flex-direction: column;
+  align-items: space-around;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+
+tbody {
+    direction: rtl;
+}

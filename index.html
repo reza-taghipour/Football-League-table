@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,7 +8,48 @@
     <title>جدول لیگ برتر</title>
   </head>
   <body>
-    <p id="test"></p>
+    <h1 class="main-header">جدول برنامه ریزی مسابقات فوتبال</h1>
+
+    <ul>
+      <li onclick="addNewLeagueHandler()">
+        <a href="#">اضافه کردن لیگ جدید</a>
+      </li>
+      <li><a href="#"></a> مشاهده لیگ های در حال برگزاری</li>
+    </ul>
+
+    <form  class="add-new-league" id="addNewLeagueInputs">
+      <div class="inputs-div">
+        <label for="leagueName">نام لیگ :</label>
+        <input type="text" required name="leagueName" id="leagueName" />
+        <label for="teamCount">تعداد تیم های شرکت کننده :</label>
+        <input
+          type="number"
+          required
+          placeholder="تعداد تیم های شرکت کننده باید زوج باشد"
+          name="teamCount"
+          id="teamCount"
+        />
+      </div>
+      <button class="add-btm" onclick="handleSubmit()" type="button" >اضافه کردن</button>
+    </form>
+
+    <form class="team-name-container" id="teamInputeContainer">
+
+    </form>
+
+    <div id="matchesContainer" class="matches-container">
+      <table id="table">
+
+      </table>
+      
+    </div>
+    <div id="matchesContainer" class="matches-container">
+      <table id="resultsTable">
+
+      </table>
+      
+    </div>
+
   </body>
 
   <script type="text/javascript" src="/mainScript.js"></script>
